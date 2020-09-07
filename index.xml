@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Website of Jane Doe</title>
-    <link>https://patec.github.io/</link>
-    <description>Recent content on Website of Jane Doe</description>
+    <title>Pate Cobb</title>
+    <link>https://patecobb.com/</link>
+    <description>Recent content on Pate Cobb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	<atom:link href="https://patec.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://patecobb.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://patec.github.io/about/</link>
+      <link>https://patecobb.com/about/</link>
       <pubDate>Sun, 06 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://patec.github.io/about/</guid>
+      <guid>https://patecobb.com/about/</guid>
       <description>More to come soon.</description>
     </item>
     

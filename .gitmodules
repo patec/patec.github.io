@@ -1,0 +1,3 @@
+[submodule "patecobb/themes/anatole."]
+	path = patecobb/themes/anatole.
+	url = https://github.com/lxndrblz/anatole.git

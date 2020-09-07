@@ -1,4 +1,4 @@
-baseURL = "https://github.com/patec/patec.github.io"
+baseURL = "https://patec.github.io"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Website of Jane Doe"

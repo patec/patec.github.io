@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark"><head>
-    <title> Pate Cobb | Pate Cobb </title>
+    <title> Pate Cobb | The Lazy Programmer </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="I&#39;m building a space to keep track of cool things I find">
     
@@ -10,16 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://patecobb.com/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://patecobb.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://patecobb.com/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://patecobb.com/">
-    <link rel="alternate" type="application/rss+xml" href="https://patecobb.com/index.xml" title="Pate Cobb" />
+    <link rel="canonical" href="https://patecobb.com/post/the_lazy_programmer/">
     
     
     <script type="text/javascript" src="https://patecobb.com/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
     <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://patecobb.com/images/site-feature-image.png"/>
 
-<meta name="twitter:title" content="Pate Cobb"/>
-<meta name="twitter:description" content="I&#39;m building a space to keep track of cool things I find"/>
+<meta name="twitter:title" content="The Lazy Programmer"/>
+<meta name="twitter:description" content="Looking back, scripting was one of most important things I failed to learn while completing my CS degree."/>
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -70,7 +69,7 @@
         
         
         
-        <li><a class="current" href="/"  title="">Home</a></li>
+        <li><a  href="/"  title="">Home</a></li>
         
         
         <li><a  href="/post/"  title="">Posts</a></li>
@@ -89,47 +88,52 @@
 
             <div class="autopagerize_page_element">
                 <div class="content">
-  
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/the_lazy_programmer/">The Lazy Programmer</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>Looking back, scripting was one of most important things I failed to learn while completing my CS degree.</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Mon, Sep 7, 2020</span>
-                 
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      <div class="post-title">
+        <h3>The Lazy Programmer
+        </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i>
+          <span class="date">Mon, Sep 7, 2020</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
         </div>
+        
+        </div>
+
+    <p>Looking back, scripting was one of most important things I failed to learn while completing my CS degree. I picked up a few basic <code>bash</code> commands here and there but was far from proficient. Some of the tricks and tools I now use might only save me a few minutes here and there, but those minutes quickly add up to hours over time. Sometimes its a matter of saving a few key strokes while creating a pull request:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat <span style="color:#e6db74">`</span>which <span style="color:#66d9ef">done</span>.sh<span style="color:#e6db74">`</span>
+git checkout -b pc/$1
+git add .
+git commit -m $2
+git push -u origin head
+mkpr $2
+</code></pre></div><p>But wait, what is <code>mkpr</code>?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat <span style="color:#e6db74">`</span>which mkpr<span style="color:#e6db74">`</span>
+hub pull-request -m<span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | xargs open
+</code></pre></div><blockquote>
+<p>hub documentation can be found <a href="https://hub.github.com/">here</a></p>
+</blockquote>
+<p>Another trick I&rsquo;ve picked up is aliasing those somewhat random commands so I don&rsquo;t have to go back and look up the documentation to find the right arguments:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias resetauthor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git ci --amend --reset-author -C HEAD&#39;</span>
+</code></pre></div><p>However, the best my favorite scripts are the scripts I no longer run myself. They&rsquo;ve now graduated from my local machine into nightly cronjobs that run as part of our ETL pipeline.</p>
+<p>I remember hearing a while back about what makes a lazy programmer the ideal employee: they&rsquo;ll automate everything. Any time a repeated task is encountered, a script is written. Even the hacky and undocumented v0.1 scripts hold value as they become the building blocks for more robust automation down the line. Once it&rsquo;s pickied up some logging here, a little error reporting there, you now have something thats running without fingers on a keyboard. This is where the true time savings really start to take effect. And, for once, being lazy pays off.</p>
+
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        
+        
       </div>
     </div>
-  </div>
-  
-  <div class="post animated fadeInDown">
-    <div class="post-title">
-      <h3><a href="/post/intro/">Welcome</a>
-      </h3>
-    </div>
-    <div class="post-content"><div class="p_part"><p>I&rsquo;ve been meaning to make my own personal site for a while and have finally got around to getting it started.</p></div>
-  
-  <div class="p_part"><p></p></div></div>
-    <div class="post-footer">
-      <div class="meta">
-        <div class="info"><i class="fa fa-sun-o"></i><span class="date">Mon, Sep 7, 2020</span>
-                 
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<div class="pagination">
-  
 
-
+    
+           
+    
 </div>
+
 
                 </div>
             </div>

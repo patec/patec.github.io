@@ -1,38 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://patecobb.com/post/automating_powder_days/</loc>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://patecobb.com/</loc>
-    <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://patecobb.com/post/</loc>
-    <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2026-03-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://patecobb.com/post/the_lazy_programmer/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://patecobb.com/post/intro/</loc>
     <lastmod>2020-09-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://patecobb.com/about/</loc>
     <lastmod>2020-09-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://patecobb.com/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://patecobb.com/tags/</loc>
   </url>
-  
 </urlset>

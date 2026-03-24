@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark"><head>
-    <title> Pate Cobb | About </title>
+    <title> Pate Cobb | Automating Powder Days </title>
     <meta charset="utf-8"><meta name="generator" content="Hugo 0.159.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="I&#39;m building a space to keep track of cool things I find">
     
@@ -10,15 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://patecobb.com/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://patecobb.com/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://patecobb.com/favicons/favicon-16x16.png">
-    <link rel="canonical" href="https://patecobb.com/about/">
+    <link rel="canonical" href="https://patecobb.com/post/automating_powder_days/">
     
     
     <script type="text/javascript" src="https://patecobb.com/js/anatole-header.min.a3fa728a9f57833a31dfb45c48caaf1e4890c8c97f07bd7133fc2359745edb5d.js" integrity="sha256-o/pyip9Xgzox37RcSMqvHkiQyMl/B71xM/wjWXRe210=" crossorigin="anonymous"></script>
     
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://patecobb.com/images/site-feature-image.png">
-  <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="I work in software because I love building new things. Its is an opportunity to solve tough problems and continually keep growing. There is always another challenge to tackle, another skill to pick up, and another way to make something work better than it did yesterday.">
+  <meta name="twitter:title" content="Automating Powder Days">
+  <meta name="twitter:description" content="I love skiing. A lot. I went all in in 2021 during COVID. I moved to Colorado and scheduled my winter around getting as many days on the mountain as possible. There was one catch: most resorts required reservation due to social distancing. You could lock in a few days further out but have unlimited reservations within 7 days. These reservations became available at 12:00am every night. If you didn’t book soon after that window opened or very early in the morning, you were out of luck.">
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -75,7 +75,7 @@
         <li><a  href="/post/"  title="">Posts</a></li>
         
         
-        <li><a class="current" href="/about/"  title="">About</a></li>
+        <li><a  href="/about/"  title="">About</a></li>
         
         
         <li class="theme-switch-item">
@@ -92,12 +92,22 @@
     <div class="post-content">
 
       <div class="post-title">
-        <h3>About
+        <h3>Automating Powder Days
         </h3>
+        
+        <div class="info">
+          <i class="fa fa-sun-o"></i>
+          <span class="date">Tue, Mar 24, 2026</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">2-minute read</span>
+        </div>
         
         </div>
 
-    <p>I work in software because I love building new things. Its is an opportunity to solve tough problems and continually keep growing. There is always another challenge to tackle, another skill to pick up, and another way to make something work better than it did yesterday.</p>
+    <p>I love skiing. A lot.  I went all in in 2021 during COVID. I moved to Colorado and scheduled my winter around getting as many days on the mountain as possible. There was one catch: most resorts required reservation due to social distancing. You could lock in a few days further out but have unlimited reservations within 7 days. These reservations became available at 12:00am every night. If you didn’t book soon after that window opened or very early in the morning, you were out of luck.</p>
+<p>At first, I tried to manage it manually. That lasted about a week. Reservations opened at midnight, and the good days—powder days, weekends, anything remotely desirable, would disappear almost instantly. Staying up every night just to click a button didn’t scale, and missing days because I was too slow was even worse.</p>
+<p>So I did what any engineer would do: I automated it.</p>
+<p>I wrote a small Python script using Selenium to log in, navigate the reservation flow, pick a date a week out, and complete the booking. Then I wired it up to GitHub Actions to run every night at midnight. Headless Chrome handled the browser, environment variables stored credentials, and a simple webhook ping to IFTTT let me know if it worked. It wasn’t fancy, but it was reliable, and more importantly, it meant I never had to think about reservations again.</p>
+<p>That setup quietly ran in the background all season. Every morning, I’d wake up knowing I had a ski day locked in, without the nightly scramble. It turned a frustrating, high-friction system into something predictable. And better yet it let me do what I love. Skiing.</p>
 
     </div>
     <div class="post-footer">
@@ -107,6 +117,8 @@
       </div>
     </div>
 
+    
+           
     
 </div>
 

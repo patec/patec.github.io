@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark"><head>
     <title> Pate Cobb | The Lazy Programmer </title>
-    <meta charset="utf-8"><meta name="generator" content="Hugo 0.74.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <meta charset="utf-8"><meta name="generator" content="Hugo 0.159.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <meta name="description" content="I&#39;m building a space to keep track of cool things I find">
     
-    <link rel="stylesheet" href="https://patecobb.com/css/style.min.5be3a155aa89a24586c761b1b5538c4040e3735ee32ac12a708dc1696c0982f5.css" integrity="sha256-W&#43;OhVaqJokWGx2GxtVOMQEDjc17jKsEqcI3BaWwJgvU=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://patecobb.com/css/style.min.3a5b6eae22d121cb3fa356aa69e3265d1fe37c6f6682455cb3327ad3930b2d59.css" integrity="sha256-OlturiLRIcs/o1aqaeMmXR/jfG9mgkVcszJ605MLLVk=" crossorigin="anonymous" type="text/css"><link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <link rel="shortcut icon" href="https://patecobb.com/favicons/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="https://patecobb.com/favicons/apple-touch-icon.png">
@@ -13,12 +13,12 @@
     <link rel="canonical" href="https://patecobb.com/post/the_lazy_programmer/">
     
     
-    <script type="text/javascript" src="https://patecobb.com/js/anatole-header.min.7e2fc0724240b28c6e214687e73a4a6eb6c196bbace546b9dc86e94cca120b5c.js" integrity="sha256-fi/AckJAsoxuIUaH5zpKbrbBlrus5Ua53IbpTMoSC1w=" crossorigin="anonymous"></script>
-    <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://patecobb.com/images/site-feature-image.png"/>
-
-<meta name="twitter:title" content="The Lazy Programmer"/>
-<meta name="twitter:description" content="Looking back, scripting was one of most important things I failed to learn while completing my CS degree."/>
+    <script type="text/javascript" src="https://patecobb.com/js/anatole-header.min.a3fa728a9f57833a31dfb45c48caaf1e4890c8c97f07bd7133fc2359745edb5d.js" integrity="sha256-o/pyip9Xgzox37RcSMqvHkiQyMl/B71xM/wjWXRe210=" crossorigin="anonymous"></script>
+    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://patecobb.com/images/site-feature-image.png">
+  <meta name="twitter:title" content="The Lazy Programmer">
+  <meta name="twitter:description" content="Looking back, scripting was one of most important things I failed to learn while completing my CS degree. I picked up a few basic bash commands here and there but was far from proficient. Some of the tricks and tools I now use might only save me a few minutes here and there, but those minutes quickly add up to hours over time. Sometimes its a matter of saving a few key strokes while creating a pull request:">
 
 </head><body><div class="sidebar animated fadeInDown">
     <div class="logo-title">
@@ -55,7 +55,7 @@
         
     </ul>
     <div class="footer">
-        <div class="by_farbox">&copy; Pate Cobb 2020 </div>
+        <div class="by_farbox">&copy; Pate Cobb 2026 </div>
       </div>
     </div>
 </div><div class="main">
@@ -104,21 +104,21 @@
         </div>
 
     <p>Looking back, scripting was one of most important things I failed to learn while completing my CS degree. I picked up a few basic <code>bash</code> commands here and there but was far from proficient. Some of the tricks and tools I now use might only save me a few minutes here and there, but those minutes quickly add up to hours over time. Sometimes its a matter of saving a few key strokes while creating a pull request:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat <span style="color:#e6db74">`</span>which <span style="color:#66d9ef">done</span>.sh<span style="color:#e6db74">`</span>
-git checkout -b pc/$1
-git add .
-git commit -m $2
-git push -u origin head
-mkpr $2
-</code></pre></div><p>But wait, what is <code>mkpr</code>?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cat <span style="color:#e6db74">`</span>which mkpr<span style="color:#e6db74">`</span>
-hub pull-request -m<span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | xargs open
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cat <span style="color:#e6db74">`</span>which <span style="color:#66d9ef">done</span>.sh<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>git checkout -b pc/$1
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m $2
+</span></span><span style="display:flex;"><span>git push -u origin head
+</span></span><span style="display:flex;"><span>mkpr $2
+</span></span></code></pre></div><p>But wait, what is <code>mkpr</code>?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cat <span style="color:#e6db74">`</span>which mkpr<span style="color:#e6db74">`</span>
+</span></span><span style="display:flex;"><span>hub pull-request -m<span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> | xargs open
+</span></span></code></pre></div><blockquote>
 <p>hub documentation can be found <a href="https://hub.github.com/">here</a></p>
 </blockquote>
 <p>Another trick I&rsquo;ve picked up is aliasing those somewhat random commands so I don&rsquo;t have to go back and look up the documentation to find the right arguments:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">alias resetauthor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git ci --amend --reset-author -C HEAD&#39;</span>
-</code></pre></div><p>However, my favorite scripts are the scripts I no longer run myself. They&rsquo;ve now graduated from my local machine into nightly cronjobs that run as part of our ETL pipeline.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>alias resetauthor<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;git ci --amend --reset-author -C HEAD&#39;</span>
+</span></span></code></pre></div><p>However, my favorite scripts are the scripts I no longer run myself. They&rsquo;ve now graduated from my local machine into nightly cronjobs that run as part of our ETL pipeline.</p>
 <p>I remember hearing a while back about what makes a lazy programmer the ideal employee: they&rsquo;ll automate everything. Any time a repeated task is encountered, a script is written. Even the hacky and undocumented v0.1 scripts hold value as they become the building blocks for more robust automation down the line. Once it&rsquo;s pickied up some logging here, a little error reporting there, you now have something thats running without fingers on a keyboard. This is where the true time savings really start to take effect. And, for once, being lazy pays off.</p>
 
     </div>
@@ -142,13 +142,13 @@ hub pull-request -m<span style="color:#e6db74">&#34;</span>$1<span style="color:
 
 
 
-<script type="text/javascript" src="https://patecobb.com/js/jquery.min.86b1e8f819ee2d9099a783e50b49dff24282545fc40773861f9126b921532e4c.js" integrity="sha256-hrHo&#43;BnuLZCZp4PlC0nf8kKCVF/EB3OGH5EmuSFTLkw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://patecobb.com/js/jquery.min.21ad544cace1cdad8d2b0acbd2a0f53a4cc73a1ff35720baeb69eac49b083fb8.js" integrity="sha256-Ia1UTKzhza2NKwrL0qD1OkzHOh/zVyC662nqxJsIP7g=" crossorigin="anonymous"></script>
 
 
 
 
-<script type="text/javascript" src="https://patecobb.com/js/bundle.min.0f9c74cb78f13d1f15f33daff4037c70354f98acfbb97a6f61708966675c3cae.js" integrity="sha256-D5x0y3jxPR8V8z2v9AN8cDVPmKz7uXpvYXCJZmdcPK4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://patecobb.com/js/bundle.min.e1708c9f2f2ef008d86194c6201839f1be346eb6f6b86ddb53d17973ac3f80cc.js" integrity="sha256-4XCMny8u8AjYYZTGIBg58b40brb2uG3bU9F5c6w/gMw=" crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://patecobb.com/js/medium-zoom.min.92f21c856129f84aeb719459b3e6ac621a3032fd7b180a18c04e1d12083f8aba.js" integrity="sha256-kvIchWEp&#43;ErrcZRZs&#43;asYhowMv17GAoYwE4dEgg/iro=" crossorigin="anonymous"></script></html></body>
+<script type="text/javascript" src="https://patecobb.com/js/medium-zoom.min.00f0d88de05977c48e4c08c312d320dafb8f9c17cb793047b360556dac1cac7c.js" integrity="sha256-APDYjeBZd8SOTAjDEtMg2vuPnBfLeTBHs2BVbawcrHw=" crossorigin="anonymous"></script></html></body>
 
 </html>
